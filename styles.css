@@ -126,7 +126,6 @@ nav {
 }
 
 
-/* 👉 ФОТО ГЕРОЯ — замени src в index.html */
 
 .hero-bg {
     position: absolute;
@@ -324,7 +323,7 @@ nav {
 
 
 /* ══════════════════════════════
-   GOLDEN HOUR SERIES  (Страница 3)
+   Fuji  (Страница 3)
 ══════════════════════════════ */
 
 .fullphoto {
@@ -337,7 +336,6 @@ nav {
 }
 
 
-/* 👉 ФОТО GOLDEN HOUR — замени src в index.html */
 
 .fullphoto img {
     position: absolute;
@@ -358,7 +356,6 @@ nav {
     z-index: 2;
     padding: 36px 48px;
     text-align: right;
-    /* всё по правому краю */
 }
 
 .fp-title {
@@ -375,7 +372,6 @@ nav {
     margin-bottom: 20px;
     max-width: 480px;
     margin-left: auto;
-    /* прижимает текст вправо */
 }
 
 .fp-meta {
@@ -383,7 +379,6 @@ nav {
     align-items: center;
     gap: 20px;
     justify-content: flex-end;
-    /* мета-данные тоже вправо */
 }
 
 
