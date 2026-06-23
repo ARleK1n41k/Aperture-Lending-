@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aperture Studios</title>
+
+    <!-- Шрифт Poppins из Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+    <!-- Наши стили -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+
+<body>
+
+    <!-- ══════════════════════════════
+     NAV — шапка сайта
+══════════════════════════════ -->
+    <nav>
+        <a href="#">
+            <img src="images/logo.png" alt="Aperture" class="logo-img" />
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="#what">Business areas</a></li>
+            <li><a href="#featured">Featured images</a></li>
+            <li><a href="#gear">Gear cage</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <a href="#" class="btn-nav">Get template</a>
+    </nav>
+
+
+    <!-- ══════════════════════════════
+     СТРАНИЦА 1 — Aperture Studios (Hero)
+══════════════════════════════ -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+
+        <!-- Тёмный градиент поверх фото -->
+        <div class="hero-grad"></div>
+
+        <!-- Блок с тремя текстами по центру, 600px ширина -->
+        <div class="hero-content">
+            <p class="eyebrow">Photographer &amp; Filmmaker</p>
+            <h1 class="hero-title">Aperture Studios</h1>
+            <p class="hero-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum
+                lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+            </p>
+        </div>
+
+        <!-- Мета-данные фото — правый нижний угол -->
+        <div class="hero-meta">
+            <!-- Выдержка -->
+            <div class="meta">
+                <i data-lucide="timer" width="16" height="16"></i>
+                <span>1/2000s</span>
+            </div>
+
+            <!-- Диафрагма -->
+            <div class="meta">
+                <i data-lucide="aperture" width="16" height="16"></i>
+                <span>f/11</span>
+            </div>
+
+            <!-- ISO -->
+            <div class="meta">
+                <i data-lucide="sun" width="16" height="16"></i>
+                <span class="iso-badge">ISO</span>
+                <span>100</span>
+            </div>
+
+            <!-- Локация -->
+            <div class="meta">
+                <i data-lucide="map-pin" width="16" height="16"></i>
+                <span>Iceland</span>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- ══════════════════════════════
+     СТРАНИЦА 2 — What we do.
+══════════════════════════════ -->
+    <section class="what" id="what">
+
+        <div class="what-header">
+            <h2>What we do.</h2>
+            <p>The areas that we're specialized in</p>
+        </div>
+
+        <div class="cards-grid">
+
+            <!-- Карточка 1
+         👉 ФОТО 2 — замени src на своё фото из Figma
+         Например: src="images/product.jpg"
+    -->
+            <div class="card">
+                <img src="images/card1.jpg" alt="Product Photography" />
+                <div class="card-overlay"></div>
+                <div class="card-body">
+                    <h3 class="card-name">Product Photography</h3>
+                    <p class="card-text">Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</p>
+                    <a href="#" class="card-btn">Read more</a>
+                </div>
+            </div>
+
+            <!-- Карточка 2
+         👉 ФОТО 3 — замени src на своё фото из Figma
+    -->
+            <div class="card">
+                <img src="images/card2.jpg" alt="Architectural Photography" />
+                <div class="card-overlay"></div>
+                <div class="card-body">
+                    <h3 class="card-name">Architectural Photography</h3>
+                    <p class="card-text">Aenean porta neque eget consequat fringilla. Vestibulum ultrices, orci nec egestas pharetra, ligula est semper enim, nec auctor sapien leo nec purus. Fusce tincidunt aliquet sapien, sit amet rhoncus leo imperdiet nec.</p>
+                    <a href="#" class="card-btn">Read more</a>
+                </div>
+            </div>
+
+            <!-- Карточка 3
+         👉 ФОТО 4 — замени src на своё фото из Figma
+    -->
+            <div class="card">
+                <img src="images/card3.jpg" alt="Nature Photography" />
+                <div class="card-overlay"></div>
+                <div class="card-body">
+                    <h3 class="card-name">Drone Photography</h3>
+                    <p class="card-text">Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt. Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus
+                        libero ac, cursus quam.</p>
+                    <a href="#" class="card-btn">Read more</a>
+                </div>
+            </div>
+
+            <!-- Карточка 4
+         👉 ФОТО 5 — замени src на своё фото из Figma
+    -->
+            <div class="card">
+                <img src="images/card4.jpg" alt="Wildlife Photography" />
+                <div class="card-overlay"></div>
+                <div class="card-body">
+                    <h3 class="card-name">Wildlife Photography</h3>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet
+                        urna turpis.</p>
+                    <a href="#" class="card-btn">Read more</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ══════════════════════════════
+     СТРАНИЦА 3 — Fuji
+══════════════════════════════ -->
+    <div class="fullphoto" id="featured">
+
+        <img src="images/fuji.jpg" alt="Sunset at Mount Fuji" />
+
+        <div class="fullphoto-grad"></div>
+
+        <div class="fullphoto-info">
+            <h2 class="fp-title">Sunset at Mount Fuji</h2>
+            <p class="fp-sub">Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non.</p>
+            <div class="fp-meta">
+
+                <!-- Выдержка: 1'' (1 секунда) -->
+                <div class="meta">
+                    <i data-lucide="timer" width="16" height="16"></i>
+                    <span>1''</span>
+                </div>
+
+                <!-- Диафрагма -->
+                <div class="meta">
+                    <i data-lucide="aperture" width="16" height="16"></i>
+                    <span>f/16</span>
+                </div>
+
+                <!-- ISO -->
+                <div class="meta">
+                    <i data-lucide="sun" width="16" height="16"></i>
+                    <span class="iso-badge">ISO</span>
+                    <span>400</span>
+                </div>
+
+                <!-- Локация -->
+                <div class="meta">
+                    <i data-lucide="map-pin" width="16" height="16"></i>
+                    <span>Japan</span>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- ══════════════════════════════
+     ЗАГЛУШКИ — остальные страницы
+     Когда будешь делать — просто удали
+     <div class="stub"> и вставь реальный HTML
+══════════════════════════════ -->
+
+    <div class="stub" id="gear">
+        <h2>Gear cage</h2>
+        <p>Страница в разработке</p>
+    </div>
+
+    <div class="stub">
+        <h2>The tools that we use</h2>
+        <p>Страница в разработке</p>
+    </div>
+
+    <div class="stub">
+        <h2>Past clients</h2>
+        <p>Страница в разработке</p>
+    </div>
+
+    <div class="stub" id="contact">
+        <h2>Need help with photography?</h2>
+        <p>Страница в разработке</p>
+    </div>
+
+
+    <!-- ══════════════════════════════
+     FOOTER
+══════════════════════════════ -->
+    <footer>
+        <div class="footer-top">
+
+            <div class="footer-brand">
+                <a href="#">
+                    <img src="images/logo.png" alt="Aperture" class="logo-img" />
+                </a>
+                <p>Photography & Filmmaking studio. Specialising in editorial, commercial, and fine art photography worldwide.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Business Areas</h4>
+                <ul>
+                    <li><a href="#">Product Photography</a></li>
+                    <li><a href="#">Architectural Photography</a></li>
+                    <li><a href="#">Nature Photography</a></li>
+                    <li><a href="#">Wildlife Photography</a></li>
+                    <li><a href="#">Filmmaking</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Pages</h4>
+                <ul>
+                    <li><a href="#">Featured Images</a></li>
+                    <li><a href="#">Gear Cage</a></li>
+                    <li><a href="#">Past Clients</a></li>
+                    <li><a href="#">Homepage</a></li>
+                    <li><a href="#">Licensing</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p class="footer-copy">© Aperture Photography Inc. All rights reserved. 2026</p>
+            <div class="footer-email">
+                <input type="email" placeholder="Enter your email address" />
+                <button>Subscribe</button>
+            </div>
+            <div class="social-links">
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Наш JavaScript подключается в конце body -->
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons(); // активирует все иконки на странице
+    </script>
+
+</body>
+
+</html>
