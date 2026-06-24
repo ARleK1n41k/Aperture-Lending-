@@ -29,9 +29,7 @@ body {
 }
 
 
-/* ══════════════════════════════
-   NAV
-══════════════════════════════ */
+/* NAV */
 
 nav {
     position: fixed;
@@ -43,31 +41,21 @@ nav {
     height: 90px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 120px;
-    border-bottom: 1px solid #222;
+    padding: 0 8.33%;
+    border-bottom: none;
 }
 
-.logo {
-    font-size: 20px;
-    font-weight: 400;
-    color: var(--white);
+.logo-link {
+    display: flex;
+    align-items: center;
+    height: 31px;
     text-decoration: none;
-    white-space: nowrap;
 }
 
 .logo-img {
     height: 31px;
-    /* высота из Figma — 31px */
     width: auto;
-    /* ширина подстроится автоматически */
     display: block;
-}
-
-.nav-center {
-    display: flex;
-    align-items: center;
-    gap: 40px;
 }
 
 .nav-links {
@@ -75,31 +63,41 @@ nav {
     align-items: center;
     gap: 40px;
     list-style: none;
+    margin: 0 40px 0 auto;
+    padding: 0;
 }
 
 .nav-links a {
-    color: var(--white);
+    color: #FFFFFF;
     text-decoration: none;
-    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    opacity: 0.85;
+    font-size: 15px;
+    line-height: 20px;
+    opacity: 1;
     transition: opacity .2s;
 }
 
 .nav-links a:hover {
-    opacity: 1;
+    opacity: 0.7;
+}
+
+.nav-links li:first-child a {
+    font-size: 13px;
 }
 
 .btn-nav {
     width: 152px;
     height: 42px;
-    background: var(--white);
-    color: var(--black);
+    background: #FFFFFF;
+    color: #000000;
     border: none;
-    border-radius: 100px;
+    border-radius: 14px;
     font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.4px;
     cursor: pointer;
     text-decoration: none;
     display: flex;
@@ -109,13 +107,11 @@ nav {
 }
 
 .btn-nav:hover {
-    opacity: .85;
+    opacity: 0.85;
 }
 
 
-/* ══════════════════════════════
-   HERO  (Страница 1 — Aperture Studios)
-══════════════════════════════ */
+/* 1 страница */
 
 .hero {
     position: relative;
@@ -124,9 +120,6 @@ nav {
     min-height: 800px;
     overflow: hidden;
 }
-
-
-/* 👉 ФОТО ГЕРОЯ — замени src в index.html */
 
 .hero-bg {
     position: absolute;
@@ -173,18 +166,12 @@ nav {
     margin-bottom: 20px;
 }
 
-
-/* Lorem ipsum */
-
 .hero-desc {
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
     color: #C0C0C0;
 }
-
-
-/* Мета-данные фото (правый нижний угол) */
 
 .hero-meta {
     position: absolute;
@@ -216,9 +203,7 @@ nav {
 }
 
 
-/* ══════════════════════════════
-   WHAT WE DO  (Страница 2)
-══════════════════════════════ */
+/* 2 страница */
 
 .what {
     background: #000000;
@@ -253,7 +238,7 @@ nav {
 .card {
     position: relative;
     overflow: hidden;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 1 / 1;
     cursor: pointer;
 }
 
@@ -323,73 +308,101 @@ nav {
 }
 
 
-/* ══════════════════════════════
-   GOLDEN HOUR SERIES  (Страница 3)
-══════════════════════════════ */
+/*  3 страница  */
 
-.fullphoto {
+.fuji-section {
     position: relative;
-    height: 500px;
+    height: 600px;
+    width: 100%;
     overflow: hidden;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+    background: #000000;
 }
 
-
-/* 👉 ФОТО GOLDEN HOUR — замени src в index.html */
-
-.fullphoto img {
+.fuji-bg {
     position: absolute;
     inset: 0;
+}
+
+.fuji-bg img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.fullphoto-grad {
+.fuji-gradient {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to right, rgba(0, 0, 0, .7) 0%, transparent 60%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, transparent 60%);
 }
 
-.fullphoto-info {
-    position: relative;
-    z-index: 2;
-    padding: 36px 48px;
-    text-align: right;
-    /* всё по правому краю */
-}
-
-.fp-title {
-    font-family: 'Poppins', sans-serif;
-    font-size: 32px;
-    font-weight: 400;
-    margin-bottom: 6px;
-}
-
-.fp-sub {
-    font-size: 13px;
-    color: var(--lgray);
-    font-weight: 300;
-    margin-bottom: 20px;
-    max-width: 480px;
-    margin-left: auto;
-    /* прижимает текст вправо */
-}
-
-.fp-meta {
+.fuji-content {
+    position: absolute;
+    top: 0;
+    right: 4.17%;
+    width: 20.83%;
+    height: 100%;
     display: flex;
     align-items: center;
-    gap: 20px;
     justify-content: flex-end;
-    /* мета-данные тоже вправо */
+}
+
+.fuji-text {
+    width: 100%;
+    padding-left: 8.33%;
+    max-width: 480px;
+}
+
+.fuji-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.fuji-desc {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #C0C0C0;
+    max-width: 460px;
+}
+
+.fuji-meta {
+    position: absolute;
+    bottom: 32px;
+    right: 48px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.meta {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    color: #FFFFFF;
+}
+
+.iso-badge {
+    border: 1px solid #FFFFFF;
+    padding: 1px 4px;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #FFFFFF;
 }
 
 
-/* ══════════════════════════════
-   ЗАГЛУШКИ (остальные страницы)
-══════════════════════════════ */
+/* ЗАГЛУШКИ */
 
 .stub {
     min-height: 400px;
@@ -414,9 +427,7 @@ nav {
 }
 
 
-/* ══════════════════════════════
-   FOOTER
-══════════════════════════════ */
+/* FOOTER */
 
 footer {
     background: #0d0d0d;
@@ -536,9 +547,7 @@ footer {
 }
 
 
-/* ══════════════════════════════
-   АДАПТИВ
-══════════════════════════════ */
+/* АДАПТИВ */
 
 
 /* Планшет — до 1024px */
@@ -588,14 +597,26 @@ footer {
     .card-name {
         font-size: 20px;
     }
-    .fullphoto {
-        height: 400px;
+    .fuji-section {
+        height: 450px;
     }
-    .fullphoto-info {
-        padding: 28px 32px;
+    .fuji-content {
+        right: 3%;
+        width: 35%;
     }
-    .fp-title {
-        font-size: 28px;
+    .fuji-text {
+        padding-left: 0;
+    }
+    .fuji-title {
+        font-size: 13px;
+    }
+    .fuji-desc {
+        font-size: 13px;
+    }
+    .fuji-meta {
+        bottom: 24px;
+        right: 32px;
+        gap: 16px;
     }
     .footer-top {
         grid-template-columns: 1fr 1fr;
@@ -614,12 +635,14 @@ footer {
         padding: 0 16px;
         height: 65px;
     }
-    /* Прячем навигацию и кнопку — вместо них будет лого */
     .nav-links {
         display: none;
     }
     .btn-nav {
         display: none;
+    }
+    .logo-img {
+        height: 24px;
     }
     .hero {
         min-height: 500px;
@@ -641,7 +664,6 @@ footer {
         font-size: 12px;
         letter-spacing: 1.5px;
     }
-    /* Мета-данные — уменьшаем и переносим */
     .hero-meta {
         bottom: 16px;
         right: 16px;
@@ -690,67 +712,94 @@ footer {
         font-size: 11px;
         max-width: 100%;
     }
-    .fullphoto {
-        height: 350px;
+    .fuji-section {
+        height: 400px;
     }
-    .fullphoto-info {
-        padding: 20px;
-        text-align: left !important;
+    .fuji-content {
+        right: 0;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
     }
-    .fullphoto--right .fullphoto-info {
-        text-align: left !important;
-    }
-    .fp-title {
-        font-size: 22px;
-    }
-    .fp-sub {
-        font-size: 12px;
+    .fuji-text {
+        padding: 0 20px;
+        text-align: left;
         max-width: 100%;
-        margin-left: 0;
-        display: block !important;
+        width: 100%;
     }
-    .fp-meta {
+    .fuji-title {
+        font-size: 12px;
+        text-align: left;
+        letter-spacing: 1.5px;
+    }
+    .fuji-desc {
+        font-size: 13px;
+        text-align: left;
+        max-width: 100%;
+    }
+    .fuji-gradient {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, transparent 40%, rgba(0, 0, 0, 0.6) 100%);
+    }
+    .fuji-meta {
+        bottom: 16px;
+        right: 16px;
         gap: 12px;
         flex-wrap: wrap;
-        justify-content: flex-start !important;
     }
-    .stub {
-        min-height: 200px;
-        padding: 40px 20px;
+    .fuji-meta .meta {
+        font-size: 10px;
     }
-    .stub h2 {
-        font-size: 24px;
-        text-align: center;
+    .fuji-meta .meta i {
+        width: 12px !important;
+        height: 12px !important;
     }
-    footer {
-        padding: 30px 16px 20px;
-    }
-    .footer-top {
-        grid-template-columns: 1fr;
-        gap: 32px;
-    }
-    .footer-brand p {
-        max-width: 100%;
-    }
-    .footer-bottom {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 16px;
-        text-align: center;
-    }
-    .footer-email {
-        flex-direction: column;
-        width: 100%;
-    }
-    .footer-email input {
-        width: 100%;
-    }
-    .footer-email button {
-        width: 100%;
-    }
-    .social-links {
-        justify-content: center;
-    }
+}
+
+.stub {
+    min-height: 200px;
+    padding: 40px 20px;
+}
+
+.stub h2 {
+    font-size: 24px;
+    text-align: center;
+}
+
+footer {
+    padding: 30px 16px 20px;
+}
+
+.footer-top {
+    grid-template-columns: 1fr;
+    gap: 32px;
+}
+
+.footer-brand p {
+    max-width: 100%;
+}
+
+.footer-bottom {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+    text-align: center;
+}
+
+.footer-email {
+    flex-direction: column;
+    width: 100%;
+}
+
+.footer-email input {
+    width: 100%;
+}
+
+.footer-email button {
+    width: 100%;
+}
+
+.social-links {
+    justify-content: center;
 }
 
 
@@ -770,10 +819,16 @@ footer {
     .card {
         aspect-ratio: 1 / 1;
     }
-    .fullphoto {
-        height: 280px;
+    .fuji-section {
+        height: 300px;
     }
-    .fp-title {
-        font-size: 18px;
+    .fuji-title {
+        font-size: 11px;
+    }
+    .fuji-desc {
+        font-size: 12px;
+    }
+    .fuji-meta {
+        display: none;
     }
 }

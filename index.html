@@ -6,24 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aperture Studios</title>
 
-    <!-- Шрифт Poppins из Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
-    <!-- Наши стили -->
     <link rel="stylesheet" href="styles.css" />
 
-    <!-- Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
 
 <body>
 
-    <!-- ══════════════════════════════
-     NAV — шапка сайта
-══════════════════════════════ -->
+    <!--NAV-->
     <nav>
-        <a href="#">
-            <img src="images/logo.png" alt="Aperture" class="logo-img" />
+        <a href="#" class="logo-link">
+            <img src="images/logo.svg" alt="Aperture" class="logo-img" />
         </a>
 
         <ul class="nav-links">
@@ -37,16 +32,11 @@
     </nav>
 
 
-    <!-- ══════════════════════════════
-     СТРАНИЦА 1 — Aperture Studios (Hero)
-══════════════════════════════ -->
+    <!--СТРАНИЦА 1 — Aperture Studios (Hero)-->
     <section class="hero" id="home">
         <div class="hero-bg"></div>
-
-        <!-- Тёмный градиент поверх фото -->
         <div class="hero-grad"></div>
 
-        <!-- Блок с тремя текстами по центру, 600px ширина -->
         <div class="hero-content">
             <p class="eyebrow">Photographer &amp; Filmmaker</p>
             <h1 class="hero-title">Aperture Studios</h1>
@@ -55,8 +45,6 @@
                 lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
             </p>
         </div>
-
-        <!-- Мета-данные фото — правый нижний угол -->
         <div class="hero-meta">
             <!-- Выдержка -->
             <div class="meta">
@@ -86,10 +74,7 @@
 
     </section>
 
-
-    <!-- ══════════════════════════════
-     СТРАНИЦА 2 — What we do.
-══════════════════════════════ -->
+    <!--СТРАНИЦА 2 — What we do.-->
     <section class="what" id="what">
 
         <div class="what-header">
@@ -99,10 +84,6 @@
 
         <div class="cards-grid">
 
-            <!-- Карточка 1
-         👉 ФОТО 2 — замени src на своё фото из Figma
-         Например: src="images/product.jpg"
-    -->
             <div class="card">
                 <img src="images/card1.jpg" alt="Product Photography" />
                 <div class="card-overlay"></div>
@@ -113,9 +94,6 @@
                 </div>
             </div>
 
-            <!-- Карточка 2
-         👉 ФОТО 3 — замени src на своё фото из Figma
-    -->
             <div class="card">
                 <img src="images/card2.jpg" alt="Architectural Photography" />
                 <div class="card-overlay"></div>
@@ -126,9 +104,6 @@
                 </div>
             </div>
 
-            <!-- Карточка 3
-         👉 ФОТО 4 — замени src на своё фото из Figma
-    -->
             <div class="card">
                 <img src="images/card3.jpg" alt="Nature Photography" />
                 <div class="card-overlay"></div>
@@ -140,9 +115,6 @@
                 </div>
             </div>
 
-            <!-- Карточка 4
-         👉 ФОТО 5 — замени src на своё фото из Figma
-    -->
             <div class="card">
                 <img src="images/card4.jpg" alt="Wildlife Photography" />
                 <div class="card-overlay"></div>
@@ -157,57 +129,43 @@
         </div>
     </section>
 
-
-    <!-- ══════════════════════════════
-     СТРАНИЦА 3 — Fuji
-══════════════════════════════ -->
-    <div class="fullphoto" id="featured">
-
-        <img src="images/fuji.jpg" alt="Sunset at Mount Fuji" />
-
-        <div class="fullphoto-grad"></div>
-
-        <div class="fullphoto-info">
-            <h2 class="fp-title">Sunset at Mount Fuji</h2>
-            <p class="fp-sub">Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non.</p>
-            <div class="fp-meta">
-
-                <!-- Выдержка: 1'' (1 секунда) -->
-                <div class="meta">
-                    <i data-lucide="timer" width="16" height="16"></i>
-                    <span>1''</span>
-                </div>
-
-                <!-- Диафрагма -->
-                <div class="meta">
-                    <i data-lucide="aperture" width="16" height="16"></i>
-                    <span>f/16</span>
-                </div>
-
-                <!-- ISO -->
-                <div class="meta">
-                    <i data-lucide="sun" width="16" height="16"></i>
-                    <span class="iso-badge">ISO</span>
-                    <span>400</span>
-                </div>
-
-                <!-- Локация -->
-                <div class="meta">
-                    <i data-lucide="map-pin" width="16" height="16"></i>
-                    <span>Japan</span>
-                </div>
-
-            </div>
+    <!--СТРАНИЦА 3 — Fuji-->
+    <section class="fuji-section" id="featured">
+        <div class="fuji-bg">
+            <img src="images/fuji.jpg" alt="Sunset at Mount Fuji" />
         </div>
 
-    </div>
+        <div class="fuji-gradient"></div>
+
+        <div class="fuji-content">
+            <div class="fuji-text">
+                <h2 class="fuji-title">Sunset at Mount Fuji</h2>
+                <p class="fuji-desc">Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non.</p>
+            </div>
+        </div>
+        <div class="fuji-meta">
+            <div class="meta">
+                <i data-lucide="timer" width="16" height="16"></i>
+                <span>1''</span>
+            </div>
+            <div class="meta">
+                <i data-lucide="aperture" width="16" height="16"></i>
+                <span>f/16</span>
+            </div>
+            <div class="meta">
+                <i data-lucide="sun" width="16" height="16"></i>
+                <span class="iso-badge">ISO</span>
+                <span>400</span>
+            </div>
+            <div class="meta">
+                <i data-lucide="map-pin" width="16" height="16"></i>
+                <span>Japan</span>
+            </div>
+        </div>
+    </section>
 
 
-    <!-- ══════════════════════════════
-     ЗАГЛУШКИ — остальные страницы
-     Когда будешь делать — просто удали
-     <div class="stub"> и вставь реальный HTML
-══════════════════════════════ -->
+    <!--ЗАГЛУШКИ — остальные страницы-->
 
     <div class="stub" id="gear">
         <h2>Gear cage</h2>
@@ -230,15 +188,13 @@
     </div>
 
 
-    <!-- ══════════════════════════════
-     FOOTER
-══════════════════════════════ -->
+    <!--FOOTER-->
     <footer>
         <div class="footer-top">
 
             <div class="footer-brand">
                 <a href="#">
-                    <img src="images/logo.png" alt="Aperture" class="logo-img" />
+                    <img src="images/logo.svg" alt="Aperture" class="logo-img" />
                 </a>
                 <p>Photography & Filmmaking studio. Specialising in editorial, commercial, and fine art photography worldwide.</p>
             </div>
@@ -281,11 +237,9 @@
         </div>
     </footer>
 
-
-    <!-- Наш JavaScript подключается в конце body -->
     <script src="script.js"></script>
     <script>
-        lucide.createIcons(); // активирует все иконки на странице
+        lucide.createIcons();
     </script>
 
 </body>
