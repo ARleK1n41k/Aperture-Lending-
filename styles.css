@@ -43,6 +43,8 @@ nav {
     align-items: center;
     padding: 0 8.33%;
     border-bottom: none;
+    gap: 20px;
+    /* Расстояние между бургером и лого */
 }
 
 .logo-link {
@@ -50,6 +52,8 @@ nav {
     align-items: center;
     height: 31px;
     text-decoration: none;
+    margin-right: auto;
+    /* Прижимает ссылки и кнопку вправо */
 }
 
 .logo-img {
@@ -63,7 +67,7 @@ nav {
     align-items: center;
     gap: 40px;
     list-style: none;
-    margin: 0 40px 0 auto;
+    margin: 0 40px 0 0;
     padding: 0;
 }
 
@@ -104,10 +108,51 @@ nav {
     align-items: center;
     justify-content: center;
     transition: opacity .2s;
+    flex-shrink: 0;
 }
 
 .btn-nav:hover {
     opacity: 0.85;
+}
+
+
+/* ── БУРГЕР-МЕНЮ ── */
+
+.burger-btn {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    z-index: 200;
+    flex-shrink: 0;
+}
+
+.burger-btn span {
+    display: block;
+    width: 28px;
+    height: 2px;
+    background: var(--white);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.burger-btn.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-btn.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.nav-mobile-only {
+    display: none;
 }
 
 
@@ -207,7 +252,6 @@ nav {
 
 .what {
     background: #000000;
-    ;
     padding: 90px 80px;
 }
 
@@ -712,12 +756,111 @@ footer {
     nav {
         padding: 0 16px;
         height: 65px;
+        gap: 12px;
+        /* Меньше расстояние между бургером и лого */
     }
-    .nav-links {
-        display: none;
+    .burger-btn {
+        display: flex;
+        order: 0;
+        /* Бургер первый */
+    }
+    .logo-link {
+        order: 1;
+        /* Лого второй */
+        margin-right: auto;
+        /* Прижимает всё остальное вправо */
     }
     .btn-nav {
         display: none;
+        /* Прячем десктопную кнопку */
+    }
+    .nav-links {
+        position: fixed;
+        top: 65px;
+        /* Сразу под хедером */
+        left: -100%;
+        /* Скрыто за ЛЕВЫМ краем */
+        width: 280px;
+        height: calc(100vh - 65px);
+        background: #181818;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 20px;
+        padding: 30px 24px;
+        transition: left 0.3s ease;
+        display: flex !important;
+        box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.5);
+        align-items: flex-start;
+        z-index: 150;
+        border-top: 1px solid #333;
+        overflow-y: auto;
+        margin: 0;
+        border-right: 1px solid #333;
+    }
+    .nav-links.open {
+        left: 0;
+        /* Выезжает СЛЕВА */
+    }
+    .nav-links a {
+        font-size: 18px;
+        padding: 8px 0;
+        color: #FFFFFF;
+        text-decoration: none;
+        opacity: 1;
+    }
+    .nav-links a:hover {
+        opacity: 0.7;
+    }
+    /* Кнопка "Get template" ВНУТРИ мобильного меню */
+    .nav-links .btn-nav-mobile {
+        display: inline-block;
+        margin-top: 16px;
+        background: #FFFFFF;
+        color: #000000;
+        padding: 12px 24px;
+        border-radius: 14px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        text-decoration: none;
+        text-align: center;
+        width: 100%;
+        transition: opacity 0.2s;
+    }
+    .nav-links .btn-nav-mobile:hover {
+        opacity: 0.85;
+    }
+    /* Затемнение фона — тоже слева */
+    .nav-overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        top: 65px;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 90;
+    }
+    .nav-overlay.active {
+        display: block;
+    }
+    .nav-mobile-only {
+        display: block;
+        margin-top: 0px;
+    }
+    .nav-mobile-only a {
+        font-size: 18px;
+        padding: 8px 0;
+        color: #FFFFFF;
+        text-decoration: none;
+        opacity: 1;
+        background: transparent !important;
+        border: none !important;
+        border-radius: 0 !important;
+        padding: 8px 0 !important;
+        width: auto !important;
+        text-align: left !important;
+    }
+    .nav-mobile-only a:hover {
+        opacity: 0.7;
     }
     .logo-img {
         height: 24px;
