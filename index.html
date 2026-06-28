@@ -17,6 +17,7 @@
 
     <!--NAV-->
     <nav>
+
         <a href="#" class="logo-link">
             <img src="images/logo.svg" alt="Aperture" class="logo-img" />
         </a>
@@ -26,9 +27,16 @@
             <li><a href="#featured">Featured images</a></li>
             <li><a href="#gear">Gear cage</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li class="nav-mobile-only"><a href="#">Get template</a></li>
         </ul>
 
         <a href="#" class="btn-nav">Get template</a>
+
+        <button class="burger-btn" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </nav>
 
 
@@ -83,7 +91,7 @@
                 <div class="card-body">
                     <h3 class="card-name">Product Photography</h3>
                     <p class="card-text">Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</p>
-                    <a href="#" class="card-btn">
+                    <a href="https://habr.com/ru/articles/1052932/" target="_blank" rel="noopener noreferrer" class="card-btn">
                         <img src="images/circle.svg" alt="" /> Read more
                     </a>
                 </div>
@@ -95,7 +103,7 @@
                 <div class="card-body">
                     <h3 class="card-name">Architectural Photography</h3>
                     <p class="card-text">Aenean porta neque eget consequat fringilla. Vestibulum ultrices, orci nec egestas pharetra, ligula est semper enim, nec auctor sapien leo nec purus. Fusce tincidunt aliquet sapien, sit amet rhoncus leo imperdiet nec.</p>
-                    <a href="#" class="card-btn">
+                    <a href="https://habr.com/ru/articles/1052898/" target="_blank" rel="noopener noreferrer" class="card-btn">
                         <img src="images/circle.svg" alt="" /> Read more
                     </a>
                 </div>
@@ -108,7 +116,7 @@
                     <h3 class="card-name">Drone Photography</h3>
                     <p class="card-text">Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt. Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus
                         libero ac, cursus quam.</p>
-                    <a href="#" class="card-btn">
+                    <a href="https://habr.com/ru/articles/1052896/" target="_blank" rel="noopener noreferrer" class="card-btn">
                         <img src="images/circle.svg" alt="" /> Read more
                     </a>
                 </div>
@@ -121,7 +129,7 @@
                     <h3 class="card-name">Wildlife Photography</h3>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet
                         urna turpis.</p>
-                    <a href="#" class="card-btn">
+                    <a href="https://habr.com/ru/articles/1052878/" target="_blank" rel="noopener noreferrer" class="card-btn">
                         <img src="images/circle.svg" alt="" /> Read more
                     </a>
                 </div>
@@ -166,27 +174,134 @@
     </section>
 
 
-    <!--ЗАГЛУШКИ — остальные страницы-->
 
-    <div class="stub" id="gear">
-        <h2>Gear cage</h2>
-        <p>Страница в разработке</p>
-    </div>
+    <!--4 страница Gear Cage -->
+    <section class="gear-cage" id="gear">
+        <div class="gear-container">
+            <div class="gear-text">
+                <span class="gear-label">The Gear cage</span>
+                <h2 class="gear-title">The tools that we use.</h2>
+                <p class="gear-desc">
+                    The say that "no place is boring if you've had a good night's sleep and have a pocket full of unexposed film". While we don't shoot (a lot) of film these days — these are the tools that we actually use everyday to capture the amazing things around us.
+                </p>
+                <a href="https://habr.com/ru/hubs/webdev/articles/" target="_blank" rel="noopener noreferrer" class="btn-gear">
+                    <span class="btn-circle"></span> Check it out
+                </a>
+            </div>
+            <div class="gear-image">
+                <img src="images/gear.jpg" alt="The Gear cage" />
+                <div class="gear-meta">
+                    <div class="meta-item">
+                        <i data-lucide="timer" width="16" height="16"></i>
+                        <span>0,8''</span>
+                    </div>
+                    <div class="meta-item">
+                        <i data-lucide="aperture" width="16" height="16"></i>
+                        <span>f/5,6</span>
+                    </div>
+                    <div class="meta-item">
+                        <i data-lucide="sun" width="16" height="16"></i>
+                        <span class="iso-badge">ISO</span>
+                        <span>100</span>
+                    </div>
+                    <div class="meta-item">
+                        <i data-lucide="map-pin" width="16" height="16"></i>
+                        <span>Sweden</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="stub">
-        <h2>The tools that we use</h2>
-        <p>Страница в разработке</p>
-    </div>
+    <!-- Monstera Leafs -->
+    <section class="leafs-section">
+        <div class="leafs-bg">
+            <img src="images/leafs.jpg" alt="Monstera Leafs" />
+        </div>
+        <div class="leafs-gradient"></div>
+        <div class="leafs-content">
+            <h2 class="leafs-title">Monstera Leafs</h2>
+            <p class="leafs-desc">Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.</p>
+        </div>
+        <div class="leafs-meta">
+            <div class="meta-item">
+                <i data-lucide="timer" width="16" height="16"></i>
+                <span>1/400s</span>
+            </div>
+            <div class="meta-item">
+                <i data-lucide="aperture" width="16" height="16"></i>
+                <span>f/3,5</span>
+            </div>
+            <div class="meta-item">
+                <i data-lucide="sun" width="16" height="16"></i>
+                <span class="iso-badge">ISO</span>
+                <span>100</span>
+            </div>
+            <div class="meta-item">
+                <i data-lucide="map-pin" width="16" height="16"></i>
+                <span>Costa Rica</span>
+            </div>
+        </div>
+    </section>
 
-    <div class="stub">
-        <h2>Past clients</h2>
-        <p>Страница в разработке</p>
-    </div>
+    <!-- Past Clients -->
+    <section class="past-clients">
+        <div class="clients-container">
+            <div class="clients-header">
+                <h2>Past clients</h2>
+                <p>Trusted by your favourite companies</p>
+            </div>
+            <div class="clients-grid">
+                <img src="images/client1.svg" alt="Client 1" />
+                <img src="images/client2.svg" alt="Client 2" />
+                <img src="images/client3.svg" alt="Client 3" />
+                <img src="images/client4.svg" alt="Client 4" />
+                <img src="images/client5.svg" alt="Client 5" />
+            </div>
+        </div>
+    </section>
 
-    <div class="stub" id="contact">
-        <h2>Need help with photography?</h2>
-        <p>Страница в разработке</p>
-    </div>
+    <!-- Star Fall -->
+    <section class="starfall-section">
+        <div class="starfall-bg">
+            <img src="images/starfall.jpg" alt="Star fall in the Himalayas" />
+        </div>
+        <div class="starfall-gradient"></div>
+        <div class="starfall-content">
+            <h2 class="starfall-title">Star fall in the Himalayas</h2>
+            <p class="starfall-desc">Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula.</p>
+        </div>
+        <div class="starfall-meta">
+            <div class="meta-item">
+                <i data-lucide="timer" width="16" height="16"></i>
+                <span>6''</span>
+            </div>
+            <div class="meta-item">
+                <i data-lucide="aperture" width="16" height="16"></i>
+                <span>f/11</span>
+            </div>
+            <div class="meta-item">
+                <i data-lucide="sun" width="16" height="16"></i>
+                <span class="iso-badge">ISO</span>
+                <span>800</span>
+            </div>
+            <div class="meta-item">
+                <i data-lucide="map-pin" width="16" height="16"></i>
+                <span>Nepal</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Need help -->
+    <section class="contact-section" id="contact">
+        <div class="contact-content">
+            <h2>Need help with photography or videography?</h2>
+            <p>We're here for you!</p>
+            <a href="https://habr.com/ru/articles/1052768/" target="_blank" rel="noopener noreferrer" class="btn-contact">
+                <span class="btn-circle"></span> Get in touch
+            </a>
+        </div>
+    </section>
 
     <!--FOOTER-->
     <footer>
@@ -230,8 +345,9 @@
                     <p>Read about all the things we do.</p>
                 </div>
                 <div class="footer-email">
-                    <input type="email" placeholder="Enter your email address" />
-                    <button>Subscribe</button>
+                    <input type="email" id="emailInput" placeholder="Enter your email address" />
+                    <button id="subscribeBtn">Subscribe</button>
+                    <div id="subscribeMessage"></div>
                 </div>
             </div>
 
