@@ -63,7 +63,6 @@
                 <span>f/11</span>
             </div>
             <div class="meta">
-                <i data-lucide="sun" width="16" height="16"></i>
                 <span class="iso-badge">ISO</span>
                 <span>100</span>
             </div>
@@ -162,7 +161,6 @@
                 <span>f/16</span>
             </div>
             <div class="meta">
-                <i data-lucide="sun" width="16" height="16"></i>
                 <span class="iso-badge">ISO</span>
                 <span>400</span>
             </div>
@@ -200,7 +198,6 @@
                         <span>f/5,6</span>
                     </div>
                     <div class="meta-item">
-                        <i data-lucide="sun" width="16" height="16"></i>
                         <span class="iso-badge">ISO</span>
                         <span>100</span>
                     </div>
@@ -233,7 +230,6 @@
                 <span>f/3,5</span>
             </div>
             <div class="meta-item">
-                <i data-lucide="sun" width="16" height="16"></i>
                 <span class="iso-badge">ISO</span>
                 <span>100</span>
             </div>
@@ -281,7 +277,6 @@
                 <span>f/11</span>
             </div>
             <div class="meta-item">
-                <i data-lucide="sun" width="16" height="16"></i>
                 <span class="iso-badge">ISO</span>
                 <span>800</span>
             </div>
@@ -302,6 +297,81 @@
             </a>
         </div>
     </section>
+
+    <!-- МОДАЛЬНОЕ ОКНО -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <h2 class="modal-title">Get template</h2>
+            <p class="modal-subtitle">Fill in the form and we'll send you the template</p>
+
+            <form class="modal-form" id="modalForm">
+                <!-- 1. ФИО -->
+                <div class="modal-field">
+                    <label>Full Name</label>
+                    <input type="text" id="modalName" placeholder="ФИО" autocomplete="off" maxlength="150" />
+                    <span class="modal-error" id="nameError">Only letters and spaces</span>
+                </div>
+
+                <!-- 2. ТЕЛЕФОН -->
+                <div class="modal-field">
+                    <label>Phone</label>
+                    <input type="text" id="modalPhone" placeholder="+7 (___) ___-__-__" />
+                    <span class="modal-error" id="phoneError">Enter valid phone number</span>
+                </div>
+
+                <!-- 3. КОММЕНТАРИЙ -->
+                <div class="modal-field">
+                    <label>Comment</label>
+                    <input type="text" id="modalComment" placeholder="Your message (optional)" minlength="10" />
+                    <span class="modal-error" id="commentError">Minimum 10 characters</span>
+                </div>
+
+                <!-- 4. ЧЕКБОКС -->
+                <div class="modal-checkbox">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="modalConsent" />
+                        <span class="checkmark"></span>
+                        I agree to the <a href="#" id="privacyPolicyLink">privacy policy</a>
+                    </label>
+                    <span class="modal-error" id="consentError">You must give your consent</span>
+                </div>
+
+                <button type="submit" class="modal-submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- УСПЕШНАЯ ОТПРАВКА -->
+    <div class="custom-overlay" id="successOverlay">
+        <div class="custom-modal success-modal">
+            <div class="success-icon-wrapper">
+                <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="32" cy="32" r="30" stroke="#22C55E" stroke-width="4"/>
+                    <path d="M20 32L28 40L44 24" stroke="#22C55E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <h2 class="custom-title">Success!</h2>
+            <p class="custom-text">Template sent successfully!<br />We will contact you shortly.</p>
+            <button class="custom-btn" id="successBtn">Got it</button>
+        </div>
+    </div>
+    <!-- ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ -->
+    <div class="custom-overlay" id="privacyOverlay">
+        <div class="custom-modal privacy-modal">
+            <button class="custom-close" id="privacyClose">&times;</button>
+            <h2 class="custom-title">Privacy Policy</h2>
+            <div class="privacy-content">
+                <p><strong>1. Data Collection</strong><br />We collect your name, phone number, and email to send templates and provide support.</p>
+                <p><strong>2. Data Usage</strong><br />Your data is used solely for communication and sending requested materials.</p>
+                <p><strong>3. Data Protection</strong><br />All data is stored encrypted and protected from unauthorized access.</p>
+                <p><strong>4. Data Sharing</strong><br />We do not share your data with third parties without your explicit consent.</p>
+                <p><strong>5. Your Rights</strong><br />You can request data deletion at any time by contacting us.</p>
+                <p><strong>6. Contact</strong><br />Email: support@aperture.com</p>
+            </div>
+            <button class="custom-btn" id="privacyBtn">I understand</button>
+        </div>
+    </div>
 
     <!--FOOTER-->
     <footer>
