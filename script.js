@@ -162,7 +162,6 @@ document.addEventListener('DOMContentLoaded', function() {
         return;
     }
 
-    // Открытие модалки
     var btnNav = document.querySelector('.btn-nav');
     var btnMobile = document.querySelector('.nav-mobile-only a');
 
@@ -175,7 +174,6 @@ document.addEventListener('DOMContentLoaded', function() {
     if (btnNav) btnNav.addEventListener('click', openModal);
     if (btnMobile) btnMobile.addEventListener('click', openModal);
 
-    // Закрытие модалки
     function closeModal() {
         modalOverlay.classList.remove('active');
         document.body.style.overflow = '';
@@ -371,7 +369,7 @@ document.addEventListener('DOMContentLoaded', function() {
             phoneError.classList.remove('visible');
         }
 
-        // 3. Комментарий — минимум 10 символов
+        // 3. Комментарий
         var commentValue = comment.value.trim();
         if (commentValue.length > 0 && commentValue.length < 10) {
             comment.classList.add('error');
@@ -382,8 +380,6 @@ document.addEventListener('DOMContentLoaded', function() {
             comment.classList.add('success');
             commentError.classList.remove('visible');
         }
-        // Если комментарий пустой — пропускаем (необязательное поле)
-
         // 4. Чекбокс
         if (!consent.checked) {
             consentError.classList.add('visible');

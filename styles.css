@@ -1514,7 +1514,6 @@ footer {
         right: 24px;
         gap: 16px;
     }
-    /* Новые секции на планшете */
     .leafs-section {
         height: 450px;
     }
@@ -1936,7 +1935,6 @@ footer {
         padding: 12px;
         font-size: 14px;
     }
-    /* Кастомные окна */
     .custom-modal {
         max-width: 100%;
         margin: 16px;
@@ -2007,7 +2005,6 @@ footer {
     .gear-meta {
         display: none;
     }
-    /* Новые секции — телефон */
     .leafs-section {
         height: 300px;
         min-height: 300px;
@@ -2086,7 +2083,6 @@ footer {
         margin-left: 28px;
         font-size: 10px;
     }
-    /* Кастомные окна */
     .custom-modal {
         padding: 24px 16px 20px;
         margin: 12px;
